@@ -18,6 +18,8 @@ images = populer_area.findAll(attrs={'class':'media__image'})
 
 # Mengambil semua link dari image, dengan mengslice menggunakan 'src'
 link_image = [image.find('a').find('img')['src'] for image in images]
+
+# Mengambil semua judul dari image dengan mengslice menggunakan 'title'
 link_title = [image.find('a').find('img')['title'] for image in images]
 
 # print(titles)
